@@ -1,32 +1,22 @@
-var fs = require("fs")
 var mocha = require('mocha')
 var assert = require("assert")
-var GithubApi = require('github')
-var config = JSON.parse(fs.readFileSync("test/config.json"));
-github = new GithubApi({
-  version: "3.0.0",
-  timeout: 5000
-})
-github.authenticate({
-  type: "oauth",
-  token: config.access_token
-})
+var github = require("./github");
 
-describe('replaceing', function () {
-  this.timeout(20000);
+describe('Real api test', function () {
+  this.timeout(10000);
   it('done', function (done) {
-    var replace = require("../")
+    var editIssue = require("../")
     var issue = {
       "user" : "suisho",
       "repo" : "sandbox",
       "number" : "1"
     }
     var expect = "unixtime_"+(new Date()).getTime();
-    var patterns = [{
-      pattern : /unixtime_[0-9]+/i,
-      replace : expect
-    }]
-    replace(github, issue, patterns ,function(err){
+    var editFunc = function(repo){
+      repo.body = repo.body.replace(/unixtime_[0-9]+/i, expect);
+      return repo;
+    }
+    editIssue(github, issue, editFunc, function(err){
       github.issues.getRepoIssue(issue, function(err, repo){
         assert.equal(repo.body, expect);
         done();
