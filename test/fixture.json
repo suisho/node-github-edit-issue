@@ -1,0 +1,44 @@
+{
+  "comments": 0,
+  "url": "https://api.github.com/repos/suisho/sandbox/issues/2",
+  "closed_by": null,
+  "created_at": "2013-02-05T17:10:04Z",
+  "user": {
+    "type": "User",
+    "url": "https://api.github.com/users/suisho",
+    "starred_url": "https://api.github.com/users/suisho/starred{/owner}{/repo}",
+    "followers_url": "https://api.github.com/users/suisho/followers",
+    "repos_url": "https://api.github.com/users/suisho/repos",
+    "subscriptions_url": "https://api.github.com/users/suisho/subscriptions",
+    "following_url": "https://api.github.com/users/suisho/following",
+    "gravatar_id": "6412bb785ea1867ffc8c7f56221710c4",
+    "avatar_url": "https://secure.gravatar.com/avatar/6412bb785ea1867ffc8c7f56221710c4?d=https://a248.e.akamai.net/assets.github.com%2Fimages%2Fgravatars%2Fgravatar-user-420.png",
+    "events_url": "https://api.github.com/users/suisho/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/suisho/received_events",
+    "organizations_url": "https://api.github.com/users/suisho/orgs",
+    "gists_url": "https://api.github.com/users/suisho/gists{/gist_id}",
+    "id": 1523007,
+    "login": "suisho"
+  },
+  "events_url": "https://api.github.com/repos/suisho/sandbox/issues/2/events",
+  "body": "hoge",
+  "pull_request": {
+    "diff_url": null,
+    "patch_url": null,
+    "html_url": null
+  },
+  "assignee": null,
+  "html_url": "https://github.com/suisho/sandbox/issues/2",
+  "milestone": null,
+  "state": "open",
+  "labels": [
+
+  ],
+  "title": "fuga",
+  "number": 2,
+  "closed_at": null,
+  "id": 10658527,
+  "comments_url": "https://api.github.com/repos/suisho/sandbox/issues/2/comments",
+  "updated_at": "2013-02-05T17:10:04Z",
+  "labels_url": "https://api.github.com/repos/suisho/sandbox/issues/2/labels{/name}"
+}
